@@ -1,9 +1,19 @@
+#center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 #container {
+    max-width: 500px;
+    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
   }
-  #container div {
-    background-color: red;
-    aspect-ratio: 1;
-  }
+#container div {
+  background-color: red;
+  aspect-ratio: 1;
+}
+#container div:hover {
+    background-color: rgb(252, 137, 137);
+}
