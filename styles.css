@@ -1,19 +1,51 @@
+:root {
+    --user-number: 4;
+  }
+
+#popup {
+    flex: 1;
+    max-width: 150px;
+    margin: 20px;
+    padding: 15px;
+}
+
+
 #center {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 #container {
-    max-width: 500px;
+    border: solid green;
+    max-width: 600px;
     flex: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-template-columns: repeat(var(--user-number), 1fr);
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
   }
 #container div {
-  background-color: red;
-  aspect-ratio: 1;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: red;
+    aspect-ratio: 1;
 }
 #container div:hover {
     background-color: rgb(252, 137, 137);
 }
+
+#button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#popup {
+    flex: 1;
+    max-width: 150px;
+    margin: 20px;
+    padding: 5px;
+}
+
+
