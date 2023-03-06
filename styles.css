@@ -1,46 +1,41 @@
 :root {
     --user-number: 4;
   }
-
 #popup {
     flex: 1;
     max-width: 150px;
     margin: 20px;
     padding: 15px;
 }
-
-
 #center {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 #container {
-    border: solid green;
+    border: solid black;
     max-width: 600px;
     flex: 1;
     display: grid;
     grid-template-columns: repeat(var(--user-number), 1fr);
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-    /* align-items: center; */
   }
-#container div {
+div .square {
     max-height: 100%;
     max-width: 100%;
-    background-color: red;
+    background-color: white;
     aspect-ratio: 1;
 }
-#container div:hover {
-    background-color: rgb(252, 137, 137);
+div .square-black {
+    max-height: 100%;
+    max-width: 100%;
+    background-color: black;
+    aspect-ratio: 1;
 }
-
 #button {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-
 #popup {
     flex: 1;
     max-width: 150px;
